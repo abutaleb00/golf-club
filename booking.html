@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Army Golf Club</title>
+  <!-- responsive screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="resources/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="resources/css/ionicons.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="resources/css/iclique.css">
+  <link rel="stylesheet" href="resources/css/skins/_all-skins.min.css">
+  <!-- Google Font -->
+</head>
+
+<body class="hold-transition skin-blue fixed sidebar-mini">
+  <!-- Main wrapper -->
+  <div class="wrapper">
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>I</b>Q</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><img src="resources/img/logo.jpg" alt="Logo" width="200" height="auto"></span>
+      </a>
+      <!-- Header Navbar -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <!-- Page Menu Title -->
+        <div class="sidebar-title">Online Room Booking</div>
+        <!-- Page Menu Title -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <span class="desig hidden-xs">Anisul Haque</span>
+                <span class="desig hidden-xs">Guest House of AGC</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header">
+                  <img src="resources/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                  <p>
+                    Anisul Haque - Guest House of AGC
+                  </p>
+                </li>
+                <!-- User Menu-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="login.html" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- =============================================== -->
+
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar -->
+      <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="">
+            <a href="guest-house.html">
+              <i class="fa fa-home"></i> <span>Dashboard</span>
+              </span>
+            </a>
+          </li>
+          <li class="active"><a href="booking.html"><i class="fa fa-money"></i> <span>Online Room Booking</span></a></li>
+          <li><a href="gust-inout.html"><i class="fa fa-external-link"></i> <span>Guest In/Out</span></a></li>
+          <li><a href="#"><i class="fa fa-dollar"></i><span>Income/ Expense</span></a></li>
+          <li><a href="#"><i class="fa fa-gift"></i><span>Inventory Management</span></a></li>
+          <li><a href="#"><i class="fa fa-bar-chart"></i><span>Reports</span></a></li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- =============================================== -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content">
+        <div class="row">
+          <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2">
+            <div class="col-md-12">
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h2 class="box-title">Make your reservation</h2>
+                </div>
+                <div class="box-body">
+                  <!-- Date -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Check In</label>
+
+                      <div class="input-group date">
+                        <div class="input-group-addon">
+                          <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" placeholder="Pick a Date" class="form-control pull-right" id="datepicker">
+                      </div>
+                      <!-- /.input group -->
+                    </div>
+                    <!-- /.form group -->
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Check out</label>
+
+                      <div class="input-group date">
+                        <div class="input-group-addon">
+                          <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" placeholder="Pick a Date" class="form-control pull-right" id="datepicker1">
+                      </div>
+                      <!-- /.input group -->
+                    </div>
+                    <!-- /.form group -->
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">No of rooms</span>
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">Adults</span>
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">Children</span>
+                      <select class="form-control">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-btn" style="padding-top: 19px;">
+					  <button type="submit" class="btn btn-info pull-right">Check availability</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- /.col -->
+          </div>
+        </div>
+        <!-- /.row -->
+        <!-- /.row -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+      <!-- Footer Section -->
+    </footer>
+
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery 3 -->
+  <script src="resources/js/jquery.min.js"></script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="resources/js/bootstrap.min.js"></script>
+  <!-- SlimScroll -->
+  <script src="resources/js/jquery.slimscroll.min.js"></script>
+  <!-- FastClick -->
+  <script src="resources/js/fastclick.js"></script>
+  <!-- iclique App -->
+  <script src="resources/js/iclique.min.js"></script>
+  <script src="resources/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="resources/js/chart.js/Chart.js"></script>
+  <script src="resources/js/highcharts.js"></script>
+  <script src="resources/js/jquery.sparkline.min.js"></script>
+  <!-- jvectormap  -->
+  <script src="resources/js/jquery-jvectormap-1.2.2.min.js"></script>
+
+  <script src="resources/js/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="resources/js/jquery.knob.min.js"></script>
+  <!-- ChartJS -->
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="resources/js/dashboard2.js"></script>
+  <script src="resources/js/dashboard.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="resources/js/demo.js"></script>
+  <script>
+    //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+  </script>
+  <script>
+    //Date picker
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+  </script>
+</body>
+
+</html>
