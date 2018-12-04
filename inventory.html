@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Army Golf Club</title>
+  <!-- responsive screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <!-- Ionicons -->
+  <link rel="stylesheet" href="resources/css/ionicons.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="resources/css/dataTables.bootstrap.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="resources/css/iclique.css">
+  <link rel="stylesheet" href="resources/css/skins/_all-skins.min.css">
+  <!-- Google Font -->
+</head>
+
+<body class="hold-transition skin-blue fixed sidebar-mini">
+  <!-- Main wrapper -->
+  <div class="wrapper">
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>I</b>Q</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><img src="resources/img/logo.jpg" alt="Logo" width="200" height="auto"></span>
+      </a>
+      <!-- Header Navbar -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <!-- Page Menu Title -->
+        <div class="sidebar-title">Army Golf Club Inventory</div>
+        <!-- Page Menu Title -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <span class="desig hidden-xs">Anisul Haque</span>
+                <span class="desig hidden-xs">Member of AGC</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header">
+                  <img src="resources/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                  <p>
+                    Anisul Haque - Member of AGC
+                  </p>
+                </li>
+                <!-- User Menu-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="login.html" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- =============================================== -->
+
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar -->
+      <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="active">
+            <a href="#">
+              <i class="fa fa-home"></i> <span>Dashboard</span>
+              </span>
+            </a>
+          </li>
+          <li class=""><a href="#"><i class="fa fa-user-secret"></i><span>Employees</span></a></li>
+          <li class=""><a href="#"><i class="fa fa-ils"></i><span>Taxes</span></a></li>
+          <li class=""><a href="#"><i class="fa  fa-pie-chart"></i><span>Reports</span></a></li>
+          <li class=""><a href="#"><i class="fa fa-gear"></i><span>Configuration</span></a></li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- =============================================== -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content">
+	  <div class="row" style="margin-top: -15px;">
+          <div class="box-body">
+            <div class="box box-primary" style="padding-top: 10px;">
+              <a class="btn btn-app">
+                <i class="fa fa-user-plus"></i> Customers
+              </a>
+              <a class="btn btn-app">
+                <i class="fa fa-truck"></i> Suppliers
+              </a>
+			  <a class="btn btn-app">
+                <span class="badge regular">67</span>
+                <i class="fa fa-cc-mastercard"></i> Purchases
+              </a>
+              <a class="btn btn-app">
+                <span class="badge regular">67</span>
+                <i class="fa fa-inbox"></i> Orders
+              </a>
+              <a class="btn btn-app">
+                <i class="fa  fa-file-text"></i> Invoices
+              </a>
+              <a class="btn btn-app active">
+                <i class="fa fa-gift"></i> Stock
+              </a>
+              <a class="btn btn-app">
+                <span class="badge regular">31</span>
+                <i class="fa fa-plus-square"></i> Booking In
+              </a>
+              <a class="btn btn-app">
+                <span class="badge bg-red">11</span>
+                <i class="fa  fa-retweet"></i> Returns
+              </a>
+			  <a class="btn btn-app">
+                <i class="fa  fa-cab"></i> Dispatch
+              </a>
+              <a class="btn btn-app">
+                <i class="fa fa-file-pdf-o"></i> Reports
+              </a>
+			  <a class="btn btn-app">
+                <i class="fa fa-dollar"></i> Incomes
+              </a>
+			  <a class="btn btn-app">
+                <i class="fa  fa-file-text-o"></i> Expenses
+              </a>
+            </div>
+            <!-- /.box-body -->
+			<div class="box">
+			
+            <div class="box-header">
+              <h3 class="box-title">Stock Items</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+			<div class="" style="padding-bottom:10px;">
+			<button type="button" class="btn btn-success">Add Item</button>
+			<button type="button" class="btn btn-success" style="background-color:#94C11E;border-color: #94C11E;">Update Item</button>
+			<button type="button" class="btn btn-danger">Delete Item</button>
+			</div>
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>BARCODE</th>
+                  <th>ITEM NAME</th>
+                  <th>CATEGORY</th>
+                  <th>COMPANY NAME</th>
+                  <th>WHOLESALE PRICE</th>
+                  <th>RETAIL PRICE</th>
+                  <th>QUANTITY</th>
+                  <th>TAX PERCENT(S)</th>
+                  <th>PHOTOS</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Golgball-1</td>
+                  <td>Golf Ball</td>
+                  <td>Ball</td>
+                  <td>X Company Ltd</td>
+                  <td>1200</td>
+                  <td>1100</td>
+                  <td>109</td>
+                  <td>1</td>
+                  <td><img src="resources/img/golf-ball.jpg" width="40px" height="35"></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
+                </tr>
+				<tr>
+                  <td>2</td>
+                  <td>Golgstick-1</td>
+                  <td>Golf Stick</td>
+                  <td>Material</td>
+                  <td>Y Company Ltd</td>
+                  <td>1900</td>
+                  <td>1850</td>
+                  <td>19</td>
+                  <td>2</td>
+                  <td><img src="resources/img/golfstick.jpg" width="40px" height="35"></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
+                </tr>
+				<tr>
+                  <td>3</td>
+                  <td>Golgbag-1</td>
+                  <td>Golf Bag</td>
+                  <td>Bag</td>
+                  <td>Z Ltd</td>
+                  <td>2000</td>
+                  <td>1850</td>
+                  <td>15</td>
+                  <td>1</td>
+                  <td><img src="resources/img/golfbag.jpg" width="40px" height="35"></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
+                </tr>
+				<tr>
+                  <td>4</td>
+                  <td>GolfTees</td>
+                  <td>Friction Golf Tees</td>
+                  <td>Equipment</td>
+                  <td>Friction Ltd</td>
+                  <td>1290</td>
+                  <td>1170</td>
+                  <td>20</td>
+                  <td>1</td>
+                  <td><img src="resources/img/frictiontee.jpg" width="40px" height="35"></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
+                </tr>
+				<tr>
+                  <td>5</td>
+                  <td>RubberTees</td>
+                  <td>Rubber Golf Mat Tees</td>
+                  <td>Equipment</td>
+                  <td>Rubber Ltd</td>
+                  <td>1190</td>
+                  <td>1070</td>
+                  <td>234</td>
+                  <td>1</td>
+                  <td><img src="resources/img/golfraber.jpg" width="40px" height="35"></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
+                </tr>
+				<tr>
+                  <td>6</td>
+                  <td>Ggolfgloves</td>
+                  <td>Golf Gloves</td>
+                  <td>Equipment</td>
+                  <td>N Company Ltd</td>
+                  <td>1090</td>
+                  <td>1000</td>
+                  <td>111</td>
+                  <td>2</td>
+                  <td><img src="resources/img/golfglob.jpg" width="40px" height="35"></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
+                </tr>
+				<tr>
+                  <td>7</td>
+                  <td>Golfboards</td>
+                  <td>Golf Boards</td>
+                  <td>Material</td>
+                  <td>Golf Boards Ltd</td>
+                  <td>11100</td>
+                  <td>1250</td>
+                  <td>23</td>
+                  <td>2</td>
+                  <td><img src="resources/img/golfboard.jpg" width="40px" height="35"></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
+                </tr>
+				<tr>
+                  <td>8</td>
+                  <td>ModularRug</td>
+                  <td>GModular Golf Rug</td>
+                  <td>Material</td>
+                  <td>CS Ltd</td>
+                  <td>111</td>
+                  <td>1230</td>
+                  <td>1089</td>
+                  <td>1</td>
+                  <td><img src="resources/img/golfrugkit.jpg" width="40px" height="35"></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
+                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+          </div>
+          </div>
+      </div>
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+      <!-- Footer Section -->
+    </footer>
+
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery 3 -->
+  <script src="resources/js/jquery.min.js"></script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="resources/js/bootstrap.min.js"></script>
+  <!-- SlimScroll -->
+  <script src="resources/js/jquery.slimscroll.min.js"></script>
+  <!-- FastClick -->
+  <script src="resources/js/fastclick.js"></script>
+  <!-- iclique App -->
+  <script src="resources/js/iclique.min.js"></script>
+  <script src="resources/js/chart.js/Chart.js"></script>
+  <script src="resources/js/highcharts.js"></script>
+  <script src="resources/js/jquery.sparkline.min.js"></script>
+  <!-- jvectormap  -->
+  <script src="resources/js/jquery-jvectormap-1.2.2.min.js"></script>
+  <script src="resources/js/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="resources/js/jquery.knob.min.js"></script>
+  <script src="resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <!-- ChartJS -->
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="resources/js/dashboard2.js"></script>
+  <script src="resources/js/dashboard.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="resources/js/demo.js"></script>
+  <script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+
+</body>
+
+</html>

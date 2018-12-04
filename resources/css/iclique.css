@@ -1565,7 +1565,7 @@ a:focus {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 .box.box-primary {
-  border-top-color: #3c8dbc;
+  border-top-color: #1FAB40;
 }
 .box.box-info {
   border-top-color: #00c0ef;
@@ -1750,7 +1750,7 @@ a:focus {
 .box-header {
   color: #444;
   display: block;
-  padding: 4px 10px;
+  padding: 10px 10px;
   position: relative;
   font-weight:bold;
 }
@@ -2388,16 +2388,16 @@ a:focus {
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
 }
 .btn-app {
-  border-radius: 3px;
+  border-radius: 8px;
   position: relative;
   padding: 15px 5px;
   margin: 0 0 10px 10px;
-  min-width: 80px;
-  height: 60px;
+  min-width: 77px;
+  height: 65px;
   text-align: center;
-  color: #666;
+  color: #fff;
   border: 1px solid #ddd;
-  background-color: #f4f4f4;
+  background-color: #1FAB40;
   font-size: 12px;
 }
 .btn-app > .fa,
@@ -2405,17 +2405,19 @@ a:focus {
 .btn-app > .ion {
   font-size: 20px;
   display: block;
+  padding-bottom: 5px;
 }
 .btn-app:hover {
-  background: #f4f4f4;
-  color: #444;
+  background: #94C11E;
+  color: #fff;
   border-color: #aaa;
 }
-.btn-app:active,
+.btn-app:active,.btn.active, .btn:active,
 .btn-app:focus {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  background-color: #94C11E;
 }
 .btn-app > .badge {
   position: absolute;
@@ -2597,7 +2599,7 @@ a:focus {
   border-color: transparent;
 }
 .nav-tabs-custom > .nav-tabs > li.active {
-  border-top-color: #3c8dbc;
+  border-top-color: #1FAB40;
 }
 .nav-tabs-custom > .nav-tabs > li.active > a,
 .nav-tabs-custom > .nav-tabs > li.active:hover > a {
@@ -5225,7 +5227,7 @@ table.text-center th {
 .table-striped>tbody>tr:nth-of-type(even){background-color:#d0e2c7}
 .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
     border-top: 0;
-    background-color: #94C11E;
+    background-color: #095a58;
 	color: #ffffff;
 }
 .table-custom>tbody>tr:nth-of-type(even){background-color:#d0e2c7; color:#050000;}
@@ -5237,7 +5239,7 @@ table.text-center th {
 .table-striped>tbody>tr:nth-of-type(even){background-color:#d0e2c7}
 .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
     border-top: 0;
-    background-color: #94C11E;
+    background-color: #095a58;
 	color: #fff;
 }
 .bapp{
@@ -5250,9 +5252,9 @@ table.text-center th {
 }
 
 .nav-tabs > li > a {
-    background: #3C8DBC !important;
+    background: #1FAB40 !important;
 	margin: 0 !important;
-	color: #fff;
+	color: #fff !important;
 	border-radius: 6px !important;
 }
 
@@ -5265,7 +5267,7 @@ table.text-center th {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
 	background-color: #fff !important;
 	color: #444 !important;
-	border: 1px solid #3C8DBC;
+	border: none;
 }
 
 .nav-tabs > li {
@@ -5373,7 +5375,7 @@ table.dataTable tbody tr.processeodd{
 	line-height: 1.42857143;
 	vertical-align: middle;
 	border-top: 1px solid #ddd;
-	font-size: 10px;
+	font-size: 11px;
 }
 .table > thead > tr > th {
     padding: 5px;
@@ -5531,4 +5533,13 @@ div.dataTables_scrollBody table {
     border-top: none;
     margin-top: 14px !important;
     margin-bottom: 0 !important;
+}
+
+table .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 15px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
