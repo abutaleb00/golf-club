@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="resources/css/ionicons.min.css">
-    <link rel="stylesheet" href="resources/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="resources/css/dataTables.bootstrap.min.css">
   <!-- Google Font -->
   <link rel="stylesheet" href="resources/js/datatables.net-bs/css/buttons.dataTables.min.css">
   <!-- Custom Stylesheet -->
@@ -86,27 +86,47 @@
       <!-- sidebar -->
       <section class="sidebar">
         <ul class="sidebar-menu" data-widget="tree">
-          <li >
+          <li>
             <a href="index.html">
               <i class="fa fa-home"></i> <span>Dashboard</span>
               </span>
             </a>
           </li>
-          <li class="">
+          <li class="treeview">
             <a href="#">
-              <i class="fa fa-edit"></i> <span>New Transaction</span>
+              <i class="fa fa-edit"></i>
+              <span>New Transaction</span>
+
               <span class="pull-right-container">
-                <small class="label pull-right bg-blue">11</small>
+                <small class="label bg-blue">5</small>
+                <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
+            <ul class="treeview-menu">
+              <li><a href="#"><i class="fa fa-circle-o"></i> All Transaction</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Practice Ball</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Teaching</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Course Coaching</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Golf Set</a></li>
+            </ul>
           </li>
-          <li class="active">
+		  <li class="treeview">
             <a href="#">
-              <i class="fa fa-list-ul"></i><span>Transaction List</span>
+              <i class="fa fa-list-ul"></i>
+              <span>Transaction List</span>
+
               <span class="pull-right-container">
-                <small class="label pull-right bg-blue">21</small>
+                <small class="label bg-blue">2</small>
+                <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
+            <ul class="treeview-menu">
+              <li><a href="#"><i class="fa fa-circle-o"></i> All Transaction</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Practice Ball</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Teaching</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Course Coaching</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Golf Set</a></li>
+            </ul>
           </li>
           <li class="">
             <a href="#">
@@ -116,19 +136,28 @@
               </span>
             </a>
           </li>
-          <li class="">
+		  <li class="treeview">
             <a href="#">
-              <i class="fa fa-briefcase"></i><span>Fees Distribution</span>
+              <i class="fa fa-briefcase"></i>
+              <span>Fees Distribution</span>
+
               <span class="pull-right-container">
-                <small class="label pull-right bg-blue">14</small>
+                <small class="label bg-blue">8</small>
+                <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
+            <ul class="treeview-menu">
+              <li><a href="#"><i class="fa fa-circle-o"></i> Practice Ball</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Teaching</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Course Coaching</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Golf Set</a></li>
+            </ul>
           </li>
           <li class="">
             <a href="#">
               <i class="fa fa-random"></i><span>3rd Party</span>
               <span class="pull-right-container">
-                <small class="label pull-right bg-blue">9</small>
+                <small class="label pull-right bg-blue">6</small>
               </span>
             </a>
           </li>
@@ -136,7 +165,7 @@
             <a href="#">
               <i class="fa fa-gift"></i><span>Inventory Management</span>
               <span class="pull-right-container">
-                <small class="label pull-right bg-blue">12</small>
+                <small class="label pull-right bg-blue">7</small>
               </span>
             </a>
           </li>
@@ -156,13 +185,27 @@
               </span>
             </a>
           </li>
-          <li class="">
+		  <li class="treeview">
             <a href="#">
-              <i class="fa fa-bar-chart"></i><span>Reports</span>
+              <i class="fa fa-bar-chart"></i>
+              <span>Reports</span>
+
               <span class="pull-right-container">
-                <small class="label pull-right bg-blue">13</small>
+                <small class="label bg-blue">8</small>
+                <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
+            <ul class="treeview-menu">
+              <li><a href="#"><i class="fa fa-circle-o"></i> State of Fund Report</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Daily Collection Report</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Collection Report</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Practice Ball Report</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Trainig Fee Report</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Course Coaching Report</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Golf Set Report</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Transaction Report</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Item Wise Transaction</a></li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -180,134 +223,161 @@
             <div class="box box-primary">
               <!-- Table -->
               <div class="box-body">
-			   <p style="font-size: 18px; font-weight:bold;">Transcation List</p>
-                                            <table id="example" class="table table-bordered table-striped">
-                                            <thead>
-                                                <tr>
-													<th>TRANSACTION</th>
-                                                    <th>DATE</th>
-                                                    <th>MEMBERSHIP</th>
-                                                    <th>MEMBER NAME</th>
-                                                    <th>GOLF CATEGORY</th>
-                                                    <th>TOTAL PRICE</th>
-                                                    <th colspan="2"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr>
-												<tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr><tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr>
-												<tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr>
-												<tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr><tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr><tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr><tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr><tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr>
-												<tr>
-                                                    <td>63954789MY576</td>
-                                                    <td>26/05/2018</td>
-                                                    <td>S-5674</td>
-                                                    <td>Shajid Abdullah</td>
-                                                    <td>Regular member of AGC</td>
-                                                    <td>500</td>
-                                                    <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot>
-                                            </tfoot>
-                                        </table>
+                <p style="font-size: 18px; font-weight:bold;">Transcation List</p>
+                <table id="example" class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>TRANSACTION</th>
+                      <th>DATE</th>
+                      <th>MEMBERSHIP</th>
+                      <th>MEMBER NAME</th>
+                      <th>GOLF CATEGORY</th>
+                      <th>TOTAL PRICE</th>
+                      <th ></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>63954789MY576</td>
+                      <td>26/05/2018</td>
+                      <td>S-5674</td>
+                      <td>Shajid Abdullah</td>
+                      <td>Regular member of AGC</td>
+                      <td>500</td>
+                      <td colspan="2"><button style="background-color: green;margin-right: 5px;color: #fff;padding:3px;">Recept</button><button
+                          style="background-color: #6AAD46;margin-right: 5px;color: #fff;padding:3px;">Edit</button><button
+                          style="background-color: red;padding:5px;margin-right: 3px;color: #fff;">Delete</button></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                  </tfoot>
+                </table>
 
-		  </div>
-		  </div>
+              </div>
+            </div>
 
+          </div>
+          <!-- /.col -->
         </div>
-        <!-- /.col -->
+        <!-- /.row -->
+      </section>
+      <!-- /.content -->
     </div>
-    <!-- /.row -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+    <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
-    <!-- Footer Section -->
-  </footer>
+    <footer class="main-footer">
+      <!-- Footer Section -->
+    </footer>
 
   </div>
   <!-- ./wrapper -->
@@ -322,7 +392,7 @@
   <script src="resources/js/fastclick.js"></script>
   <!-- iclique App -->
   <script src="resources/js/iclique.min.js"></script>
-    <script src="resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
   <script src="resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
   <script src="resources/js/datatables.net/js/vfs_fonts.js"></script>
   <script src="resources/js/datatables.net/js/pdfmake.min.js"></script>

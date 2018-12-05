@@ -519,7 +519,7 @@ a:focus {
 }
 .sidebar-menu > li .label,
 .sidebar-menu > li .badge {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .sidebar-menu > li .badge {
   margin-top: 3px;

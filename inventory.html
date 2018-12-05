@@ -9,11 +9,13 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="resources/css/bootstrap.min.css">
-    <!-- Ionicons -->
+  <!-- Ionicons -->
   <link rel="stylesheet" href="resources/css/ionicons.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="resources/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="resources/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="resources/css/select.dataTables.min.css">
 
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="resources/css/iclique.css">
@@ -106,7 +108,7 @@
     <div class="content-wrapper">
       <!-- Main content -->
       <section class="content">
-	  <div class="row" style="margin-top: -15px;">
+        <div class="row" style="margin-top: -15px;">
           <div class="box-body">
             <div class="box box-primary" style="padding-top: 10px;">
               <a class="btn btn-app">
@@ -115,7 +117,7 @@
               <a class="btn btn-app">
                 <i class="fa fa-truck"></i> Suppliers
               </a>
-			  <a class="btn btn-app">
+              <a class="btn btn-app">
                 <span class="badge regular">67</span>
                 <i class="fa fa-cc-mastercard"></i> Purchases
               </a>
@@ -137,188 +139,358 @@
                 <span class="badge bg-red">11</span>
                 <i class="fa  fa-retweet"></i> Returns
               </a>
-			  <a class="btn btn-app">
+              <a class="btn btn-app">
                 <i class="fa  fa-cab"></i> Dispatch
               </a>
               <a class="btn btn-app">
                 <i class="fa fa-file-pdf-o"></i> Reports
               </a>
-			  <a class="btn btn-app">
+              <a class="btn btn-app">
                 <i class="fa fa-dollar"></i> Incomes
               </a>
-			  <a class="btn btn-app">
+              <a class="btn btn-app">
                 <i class="fa  fa-file-text-o"></i> Expenses
               </a>
             </div>
             <!-- /.box-body -->
-			<div class="box">
-			
-            <div class="box-header">
-              <h3 class="box-title">Stock Items</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-			<div class="" style="padding-bottom:10px;">
-			<button type="button" class="btn btn-success">Add Item</button>
-			<button type="button" class="btn btn-success" style="background-color:#94C11E;border-color: #94C11E;">Update Item</button>
-			<button type="button" class="btn btn-danger">Delete Item</button>
-			</div>
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>BARCODE</th>
-                  <th>ITEM NAME</th>
-                  <th>CATEGORY</th>
-                  <th>COMPANY NAME</th>
-                  <th>WHOLESALE PRICE</th>
-                  <th>RETAIL PRICE</th>
-                  <th>QUANTITY</th>
-                  <th>TAX PERCENT(S)</th>
-                  <th>PHOTOS</th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Golgball-1</td>
-                  <td>Golf Ball</td>
-                  <td>Ball</td>
-                  <td>X Company Ltd</td>
-                  <td>1200</td>
-                  <td>1100</td>
-                  <td>109</td>
-                  <td>1</td>
-                  <td><img src="resources/img/golf-ball.jpg" width="40px" height="35"></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
-                </tr>
-				<tr>
-                  <td>2</td>
-                  <td>Golgstick-1</td>
-                  <td>Golf Stick</td>
-                  <td>Material</td>
-                  <td>Y Company Ltd</td>
-                  <td>1900</td>
-                  <td>1850</td>
-                  <td>19</td>
-                  <td>2</td>
-                  <td><img src="resources/img/golfstick.jpg" width="40px" height="35"></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
-                </tr>
-				<tr>
-                  <td>3</td>
-                  <td>Golgbag-1</td>
-                  <td>Golf Bag</td>
-                  <td>Bag</td>
-                  <td>Z Ltd</td>
-                  <td>2000</td>
-                  <td>1850</td>
-                  <td>15</td>
-                  <td>1</td>
-                  <td><img src="resources/img/golfbag.jpg" width="40px" height="35"></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
-                </tr>
-				<tr>
-                  <td>4</td>
-                  <td>GolfTees</td>
-                  <td>Friction Golf Tees</td>
-                  <td>Equipment</td>
-                  <td>Friction Ltd</td>
-                  <td>1290</td>
-                  <td>1170</td>
-                  <td>20</td>
-                  <td>1</td>
-                  <td><img src="resources/img/frictiontee.jpg" width="40px" height="35"></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
-                </tr>
-				<tr>
-                  <td>5</td>
-                  <td>RubberTees</td>
-                  <td>Rubber Golf Mat Tees</td>
-                  <td>Equipment</td>
-                  <td>Rubber Ltd</td>
-                  <td>1190</td>
-                  <td>1070</td>
-                  <td>234</td>
-                  <td>1</td>
-                  <td><img src="resources/img/golfraber.jpg" width="40px" height="35"></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
-                </tr>
-				<tr>
-                  <td>6</td>
-                  <td>Ggolfgloves</td>
-                  <td>Golf Gloves</td>
-                  <td>Equipment</td>
-                  <td>N Company Ltd</td>
-                  <td>1090</td>
-                  <td>1000</td>
-                  <td>111</td>
-                  <td>2</td>
-                  <td><img src="resources/img/golfglob.jpg" width="40px" height="35"></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
-                </tr>
-				<tr>
-                  <td>7</td>
-                  <td>Golfboards</td>
-                  <td>Golf Boards</td>
-                  <td>Material</td>
-                  <td>Golf Boards Ltd</td>
-                  <td>11100</td>
-                  <td>1250</td>
-                  <td>23</td>
-                  <td>2</td>
-                  <td><img src="resources/img/golfboard.jpg" width="40px" height="35"></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
-                </tr>
-				<tr>
-                  <td>8</td>
-                  <td>ModularRug</td>
-                  <td>GModular Golf Rug</td>
-                  <td>Material</td>
-                  <td>CS Ltd</td>
-                  <td>111</td>
-                  <td>1230</td>
-                  <td>1089</td>
-                  <td>1</td>
-                  <td><img src="resources/img/golfrugkit.jpg" width="40px" height="35"></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-floppy-o"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-file-text"></i></a></td>
-                  <td style="text-align:center;"><a href="#"><i class="fa fa-edit"></i></a></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-          </div>
-          </div>
-      </div>
-      </section>
-      <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
+            <div class="box">
 
-    <footer class="main-footer">
-      <!-- Footer Section -->
-    </footer>
+              <div class="box-header">
+                <h3 class="box-title">Stock Items</h3>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <div class="" style="padding-bottom:10px;">
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-default">Add Item</button>
+                  <button type="button" class="btn btn-success" style="background-color:#94C11E;border-color: #94C11E;" data-toggle="modal" data-target="#modal-update">UpdateItem</button>
+                  <button type="button" class="btn btn-danger">Delete Item</button>
+                </div>
+                <table id="example" class="table display table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th style="width:20px;"></th>
+                      <th>ID</th>
+                      <th>BARCODE</th>
+                      <th>ITEM NAME</th>
+                      <th>CATEGORY</th>
+                      <th>COMPANY NAME</th>
+                      <th>WHOLESALE PRICE</th>
+                      <th>RETAIL PRICE</th>
+                      <th>QUANTITY</th>
+                      <th>TAX PERCENT(S)</th>
+                      <th>PHOTOS</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td>1</td>
+                      <td>Golgball-1</td>
+                      <td>Golf Ball</td>
+                      <td>Ball</td>
+                      <td>X Company Ltd</td>
+                      <td>1200</td>
+                      <td>1100</td>
+                      <td>109</td>
+                      <td>1</td>
+                      <td><img src="resources/img/golf-ball.jpg" width="40px" height="35"></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-default"><i class="fa fa-floppy-o"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-file-text"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-edit"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>2</td>
+                      <td>Golgstick-1</td>
+                      <td>Golf Stick</td>
+                      <td>Material</td>
+                      <td>Y Company Ltd</td>
+                      <td>1900</td>
+                      <td>1850</td>
+                      <td>19</td>
+                      <td>2</td>
+                      <td><img src="resources/img/golfstick.jpg" width="40px" height="35"></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-default"><i class="fa fa-floppy-o"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-file-text"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-edit"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>3</td>
+                      <td>Golgbag-1</td>
+                      <td>Golf Bag</td>
+                      <td>Bag</td>
+                      <td>Z Ltd</td>
+                      <td>2000</td>
+                      <td>1850</td>
+                      <td>15</td>
+                      <td>1</td>
+                      <td><img src="resources/img/golfbag.jpg" width="40px" height="35"></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-default"><i class="fa fa-floppy-o"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-file-text"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-edit"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>4</td>
+                      <td>GolfTees</td>
+                      <td>Friction Golf Tees</td>
+                      <td>Equipment</td>
+                      <td>Friction Ltd</td>
+                      <td>1290</td>
+                      <td>1170</td>
+                      <td>20</td>
+                      <td>1</td>
+                      <td><img src="resources/img/frictiontee.jpg" width="40px" height="35"></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-default"><i class="fa fa-floppy-o"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-file-text"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-edit"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>5</td>
+                      <td>RubberTees</td>
+                      <td>Rubber Golf Mat Tees</td>
+                      <td>Equipment</td>
+                      <td>Rubber Ltd</td>
+                      <td>1190</td>
+                      <td>1070</td>
+                      <td>234</td>
+                      <td>1</td>
+                      <td><img src="resources/img/golfraber.jpg" width="40px" height="35"></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-default"><i class="fa fa-floppy-o"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-file-text"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-edit"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>6</td>
+                      <td>Ggolfgloves</td>
+                      <td>Golf Gloves</td>
+                      <td>Equipment</td>
+                      <td>N Company Ltd</td>
+                      <td>1090</td>
+                      <td>1000</td>
+                      <td>111</td>
+                      <td>2</td>
+                      <td><img src="resources/img/golfglob.jpg" width="40px" height="35"></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-default"><i class="fa fa-floppy-o"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-file-text"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-edit"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>7</td>
+                      <td>Golfboards</td>
+                      <td>Golf Boards</td>
+                      <td>Material</td>
+                      <td>Golf Boards Ltd</td>
+                      <td>11100</td>
+                      <td>1250</td>
+                      <td>23</td>
+                      <td>2</td>
+                      <td><img src="resources/img/golfboard.jpg" width="40px" height="35"></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-default"><i class="fa fa-floppy-o"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-file-text"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-edit"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>8</td>
+                      <td>ModularRug</td>
+                      <td>GModular Golf Rug</td>
+                      <td>Material</td>
+                      <td>CS Ltd</td>
+                      <td>111</td>
+                      <td>1230</td>
+                      <td>1089</td>
+                      <td>1</td>
+                      <td><img src="resources/img/golfrugkit.jpg" width="40px" height="35"></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-default"><i class="fa fa-floppy-o"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-file-text"></i></a></td>
+                      <td style="text-align:center;"><a href="#" data-toggle="modal" data-target="#modal-update"><i class="fa fa-edit"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+          </div>
+
+
+          <div class="modal fade" id="modal-default">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Add New Item</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <div class="box-body">
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Barcode</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="Barcode" placeholder="Barcode">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Item Name</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Item Name">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Category</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Category">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Company Name</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Stock location">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Wholesale Price</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Wholesale Price">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Retail Price</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Retail Price">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Quantity stock</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Quantity stock">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Description</label>
+
+                        <div class="col-sm-10">
+                          <input type="textarea" class="form-control" id="inputEmail3" placeholder="Description">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Photos</label>
+
+                        <div class="col-sm-10">
+                          <input type="file" class="form-control" id="inputEmail3" placeholder="Comments">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+          </div>
+		  
+		  <div class="modal fade" id="modal-update">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Update Inventory</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <div class="box-body">
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Barcode</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="Barcode" value="Golgball-1" placeholder="Barcode">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Item Name</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" value="Golf Ball" placeholder="Item Name">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Category</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" value="Ball" placeholder="Category">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Company Name</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" value="X Company Ltd" placeholder="Stock location">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Current Quantity</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" value="109" placeholder="Current Quantity">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Inventory to add or subtract.</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Inventory to add or subtract.">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Comments</label>
+
+                        <div class="col-sm-10">
+                          <input type="textarea" class="form-control" id="inputEmail3" placeholder="Comments">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Update</button>
+                </div>
+              </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+          </div>
+        </div>
+    </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <!-- Footer Section -->
+  </footer>
 
   </div>
   <!-- ./wrapper -->
@@ -342,6 +514,7 @@
   <script src="resources/js/jquery.knob.min.js"></script>
   <script src="resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
   <script src="resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="resources/js/dataTables.select.min.js"></script>
   <!-- ChartJS -->
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="resources/js/dashboard2.js"></script>
@@ -349,18 +522,22 @@
   <!-- AdminLTE for demo purposes -->
   <script src="resources/js/demo.js"></script>
   <script>
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
-</script>
+$(document).ready(function() {
+    $('#example').DataTable( {
+        columnDefs: [ {
+            orderable: false,
+            className: 'select-checkbox',
+            targets:   0
+        } ],
+        select: {
+            style:    'multi',
+            selector: 'td:first-child'
+        },
+        order: [[ 1, 'asc' ]]
+    } );
+} );
+
+  </script>
 
 </body>
 
